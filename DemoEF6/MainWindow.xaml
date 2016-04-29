@@ -1,0 +1,39 @@
+﻿<Window x:Class="DemoEF6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TabControl HorizontalAlignment="Left" Height="301" Margin="10,10,0,0" VerticalAlignment="Top" Width="500">
+            <TabItem Header="Admin">
+                <Grid Background="#FFE5E5E5">
+                    <Label x:Name="lblKund" Content="Ny Kund" HorizontalAlignment="Left" Margin="166,36,0,0" VerticalAlignment="Top" FontSize="20"/>
+                    <TextBox x:Name="tbxCustomerName" HorizontalAlignment="Left" Height="24" Margin="166,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="94" FontSize="20"/>
+                    <TextBox x:Name="tbxOrderValue" HorizontalAlignment="Left" Height="24" Margin="166,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="94" FontSize="20"/>
+                    <Label x:Name="lblKund_Copy" Content="Namn" HorizontalAlignment="Left" Margin="10,79,0,0" VerticalAlignment="Top" FontSize="20"/>
+                    <Label x:Name="lblKund_Copy1" Content="Ordervärde" HorizontalAlignment="Left" Margin="10,135,0,0" VerticalAlignment="Top" FontSize="20"/>
+                    <Button x:Name="btnSaveCustomer" Content="Spara" HorizontalAlignment="Left" Margin="166,192,0,0" VerticalAlignment="Top" Width="94" Height="42" Click="btnSave_Click" FontSize="20"/>
+                    <Label x:Name="lblProduct" Content="Ny Produkt" HorizontalAlignment="Left" Margin="320,36,0,0" VerticalAlignment="Top" FontSize="20"/>
+                    <TextBox x:Name="tbxProductName" HorizontalAlignment="Left" Height="24" Margin="320,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="94" FontSize="20"/>
+                    <TextBox x:Name="tbxProductPrice" HorizontalAlignment="Left" Height="24" Margin="320,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="94" FontSize="20"/>
+                    <Button x:Name="btnSaveProduct" Content="Spara" HorizontalAlignment="Left" Margin="320,192,0,0" VerticalAlignment="Top" Width="94" Height="42" Click="btnSave_product_Click" FontSize="20"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Main" RenderTransformOrigin="-0.908,0.376">
+                <Grid Background="#FFE5E5E5" Margin="0,5,0,-4">
+                    <Label x:Name="lblKund1" Content="Kund" HorizontalAlignment="Left" Margin="81,28,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="tbxMainCustomer" HorizontalAlignment="Left" Height="24" Margin="216,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20"/>
+                    <Label x:Name="lblMainOrder" Content="Ordernamn" HorizontalAlignment="Left" Margin="81,57,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="tbxMainOrder" HorizontalAlignment="Left" Height="23" Margin="216,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20"/>
+                    <Label x:Name="lblAntal" Content="Antal" HorizontalAlignment="Left" Margin="81,88,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="tbxAntal" HorizontalAlignment="Left" Height="24" Margin="216,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" FontSize="20"/>
+                    <Label x:Name="lblPris" Content="Pris" HorizontalAlignment="Left" Margin="81,119,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="tbxPris" HorizontalAlignment="Left" Height="24" Margin="216,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20"/>
+                    <Label x:Name="lblMainPrisTotal" Content="Summa" HorizontalAlignment="Left" Margin="81,141,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="tbxSumma" HorizontalAlignment="Left" Height="24" Margin="216,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="20"/>
+                    <Button x:Name="btnMainSave" Content="Spara" HorizontalAlignment="Left" Margin="214,200,0,0" VerticalAlignment="Top" Width="74" FontSize="20" Click="btnMainSave_Click"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
